@@ -6,7 +6,7 @@ def call() {
         git status
         git add .
         git commit -m "Build changes"
-        git push origin main
+        git push origin master
         '''
     }
 }
