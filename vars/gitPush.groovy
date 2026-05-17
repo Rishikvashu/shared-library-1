@@ -1,12 +1,10 @@
 def call() {
 
-    stage('Git Push') {
-
-        sh '''
-        git status
-        git add .
-        git commit -m "Build changes"
-        git push origin master
-        '''
-    }
+    sh '''
+    git branch
+    git checkout master
+    git add .
+    git commit -m "Updated from Jenkins build" || true
+    git push origin master
+    '''
 }
