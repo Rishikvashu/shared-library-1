@@ -16,7 +16,7 @@ pipeline {
             steps {
 
                 checkout scmGit(
-                    branches: [[name: '*/main']],
+                    branches: [[name: '*/master']],
                     userRemoteConfigs: [[url: 'https://github.com/opstree/spring3hibernate.git']]
                 )
             }
