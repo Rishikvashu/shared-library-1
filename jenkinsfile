@@ -17,7 +17,7 @@ pipeline {
 
                 checkout scmGit(
                     branches: [[name: '*/main']],
-                    userRemoteConfigs: [[url: 'https://github.com/Rishikvashu/shared-library-1.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/opstree/spring3hibernate.git']]
                 )
             }
         }
